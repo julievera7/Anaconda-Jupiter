@@ -1,0 +1,46 @@
+# ----------- Instalación de Anaconda ------------#
+# Paso 1: descargar 
+# https://www.anaconda.com/download/#linux
+
+#Paso 2: 
+$ bash Anaconda3-5.2.0-Linux-x86_64.sh
+
+## Output
+Welcome to Anaconda3 5.2.0
+
+In order to continue the installation process, please review the license
+agreement.
+Please, press ENTER to continue
+>>> 
+
+# Paso 3: Aceptar Licencia
+## Output
+
+===================================
+Anaconda End User License Agreement
+===================================
+
+Copyright 2015, Anaconda, Inc.
+
+All rights reserved under the 3-clause BSD License:
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are 
+met:
+
+...
+
+Do you accept the license terms? [yes|no]
+[no] >>> 
+
+# Paso 4: Definir o confirmar ubicación de anaconda3
+
+Anaconda3 will now be installed into this location:
+/home/jvera/anaconda3
+
+  - Press ENTER to confirm the location
+  - Press CTRL-C to abort the installation
+  - Or specify a different location below
+
+[/home/jvera/anaconda3] >>> 
+
+
