@@ -1,11 +1,13 @@
-# ----------- Instalación de Anaconda ------------#
+# ----------- INSTALACIÓN ANACONDA ------------#
 # Paso 1: descargar 
 # https://www.anaconda.com/download/#linux
 
-#Paso 2: 
+# Paso 2: 
+
 $ bash Anaconda3-5.2.0-Linux-x86_64.sh
 
 ## Output
+
 Welcome to Anaconda3 5.2.0
 
 In order to continue the installation process, please review the license
@@ -13,7 +15,7 @@ agreement.
 Please, press ENTER to continue
 >>> 
 
-# Paso 3: Aceptar Licencia
+# Paso 3: Aceptar Licencia - Introducir la palabra yes
 ## Output
 
 ===================================
@@ -32,7 +34,7 @@ met:
 Do you accept the license terms? [yes|no]
 [no] >>> 
 
-# Paso 4: Definir o confirmar ubicación de anaconda3
+# Paso 4: Definir o confirmar ubicación de anaconda3.
 
 Anaconda3 will now be installed into this location:
 /home/jvera/anaconda3
@@ -42,5 +44,79 @@ Anaconda3 will now be installed into this location:
   - Or specify a different location below
 
 [/home/jvera/anaconda3] >>> 
+
+#Si acepta qye la ruta de instalación es /home/jvera/anaconda3, presionar ENTER
+
+#Output
+
+PREFIX=/home/jvera/anaconda3
+installing: python-3.6.5-hc3d631a_2 ...
+Python 3.6.5 :: Anaconda, Inc.
+installing: blas-1.0-mkl ...
+installing: ca-certificates-2018.03.07-0 ...
+installing: conda-env-2.6.0-h36134e3_1 ...
+installing: intel-openmp-2018.0.0-8 ...
+installing: libgcc-ng-7.2.0-hdf63c60_3 ...
+installing: libgfortran-ng-7.2.0-hdf63c60_3 ...
+installing: libstdcxx-ng-7.2.0-hdf63c60_3 ...
+installing: bzip2-1.0.6-h14c3975_5 .
+...
+
+installing: anaconda-5.2.0-py36_3 ...
+installation finished.
+Do you wish the installer to prepend the Anaconda3 install location
+to PATH in your /home/jvera/.bashrc ? [yes|no]
+[no] >>> 
+
+#Una vez que indique (o acepte) la ruta de Anaconda3:
+
+Appending source /home/jvera/anaconda3/bin/activate to /home/jvera/.bashrc
+A backup will be made to: /home/jvera/.bashrc-anaconda3.bak
+
+cp: no se puede crear el fichero regular '/home/jvera/.bashrc-anaconda3.bak': Permiso denegado
+
+For this change to become active, you have to open a new terminal.
+
+Thank you for installing Anaconda3!
+
+#Paso 5: Activar la instalación
+
+$ source ~/.bashrc
+
+# Paso 6: Verificar la instalación
+
+$ conda list
+
+#Output
+
+# packages in environment at /home/jvera/anaconda3:
+#
+# Name                    Version                   Build  Channel
+_ipyw_jlab_nb_ext_conf    0.1.0            py36he11e457_0  
+alabaster                 0.7.10           py36h306e16b_0  
+anaconda                  5.2.0                    py36_3  
+anaconda-client           1.6.14                   py36_0  
+anaconda-navigator        1.8.7                    py36_0  
+anaconda-project          0.8.2            py36h44fb852_0 
+
+
+# ----------- INSTALACIÓN JUPYTER NOTEBOOK ------------#
+
+# Paso 1: Instalar requerimientos
+
+$ sudo apt-get install python3-pip ipython3
+
+# Paso 2 Opción A: Instalar con el comando conda
+$ conda install jupyter
+
+#Al instalar Anaconda3.5 ya cotiene jupyter Notebook y JupyterLab
+# Paso 3 Opción B: Instalar con pip
+
+$  python -m pip install jupyter
+
+
+
+#------------ Librería ModSim --------------------
+
 
 
